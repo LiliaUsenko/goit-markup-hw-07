@@ -129,7 +129,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 
 .navigation-list-conteiner {
@@ -148,7 +148,27 @@ body {
   border: none;
 }
 
+.logo {
+   display: flex;
+   align-items: center;
+    font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-iris);
+ }
+
+.logo-second-color {
+  color: var(--color-navy-blue);
+}
+
+}
+
 /*Mobile menu*/
+
 .mobile-menu.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -251,14 +271,13 @@ body {
     letter-spacing: 0.02em;
     color: var(--color-iris);
   }
-
   .mobile-menu-socials {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-  padding-left: 0;
-  margin: 0;
-}
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
 /* 
