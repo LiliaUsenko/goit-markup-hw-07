@@ -14,7 +14,6 @@
     />
 
     <!--Додаваня шрифта з Google Fonts-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,62 +27,148 @@
   </head>
 
   <body>
-    <!--Header-->
+    
+     <!--Header-->
 
-    <header class="header">
-      <div class="container header-conteiner">
-        <!--Navigation-->
+   <header class="header">
+      <div class="header-conteiner container">
         <nav class="navigation-conteiner">
-          <!--Logo-->
-          <a class="header-logo link" href="./index.html"
-            >Web<span class="second-color-header-logo">Studio</span></a
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo-second-color">Studio</span></a
           >
-          <ul class="list navigation-list-conteiner">
+          <ul class="navigation-list-conteiner list">
             <li>
-              <a class="header-link current link" href="./index.html">Studio</a>
+              <a class="navigation-link current link" href="./index.html">Studio</a>
             </li>
             <li>
-              <a class="header-link link" href="./portfolio.html">Portfolio</a>
+              <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="header-link link" href="">Contacts</a>
+              <a class="navigation-link link" href="">Contacts</a>
             </li>
           </ul>
-        </nav>
-
-        <!--Address and phone-->
+        </nav> 
+        <button class="button-mobile-menu" type="button" data-modal-open>
+          <svg  width="32" height="22">
+            <use href="./images/icons.svg#icon-modal-menu"></use>
+          </svg>
+        </button>
         <address class="adress">
-          <ul class="list address-conteiner">
+          <ul class="address-conteiner list">
             <li>
-              <a class="adress-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a class="adress-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
       </div>
-    </header>
+
+        <!--Mobile menu-->
+
+      <div class="mobile-menu" is-hidden">
+        <div class="mobile-menu-wrapper">
+          <button class="button-close" type="button">
+            <svg class="icon-button-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-button-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <div class="contacts-container">
+            <ul class="mobile-menu-contacts list">
+              <li>
+                 <a class="mobile-menu-phone link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                 <a class="mobile-menu-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-socials">
+              <li class="mobile-menu-socials-item list">
+                <a
+                  class="mobile-menu-socials-link link"
+                  href="instagram.com"
+                  target="_blank"
+                  rel="nooener noreferrer"
+                  aria-label="instagram icon">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-socials-item list">
+                <a
+                  class="mobile-menu-socials-link link"
+                  href="twitter.com"
+                  target="_blank"
+                  rel="nooener noreferrer"
+                  aria-label="twitter icon">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-socials-item list">
+                <a
+                  class="mobile-menu-socials-link link"
+                  href="facebook.com"
+                  target="_blank"
+                  rel="nooener noreferrer"
+                  aria-label="facebook icon">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-socials-item list">
+                <a
+                  class="mobile-menu-socials-link link"
+                  href="linkedin.com"
+                  target="_blank"
+                  rel="nooener noreferrer"
+                  aria-label="linkedin icon">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </header>
+
+
+
+
+
 
     <!--Main-->
 
     <main>
       <!--Hero image-->
-      <section class="hero">
+    <!--   <section class="hero">
         <div class="container hero-conteiner">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="btn btn-order" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--Tools-->
-      <section class="section-tools">
+     <!--  <section class="section-tools">
         <div class="container">
           <h2 class="visually-hidden name-section-tools">Tools</h2>
           <ul class="list tools-conteiner">
@@ -137,10 +222,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--What are we doing-->
-      <section class="our-work">
+     <!--  <section class="our-work">
         <div class="container">
           <h2 class="name-section">What are we doing</h2>
           <ul class="list conteiner-our-work">
@@ -170,10 +255,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Our Team-->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="name-section">Our Team</h2>
           <ul class="list team-conteiner">
@@ -452,11 +537,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Customers-->
 
-      <section class="customers">
+     <!--  <section class="customers">
         <div class="container">
           <h2 class="name-section">Customers</h2>
           <ul class="customers-conteiner list">
@@ -509,15 +594,15 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container-whole-footer">
-        <div class="footer-conteiner">
+        <div class="footer-conteiner"> -->
           <!--Logo-->
-          <a class="footer-logo link" href="./index.html"
+          <!-- <a class="footer-logo link" href="./index.html"
             >Web<span class="second-color-footer-logo">Studio</span>
           </a>
           <p class="footer-text">
@@ -581,11 +666,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <!--Subscribe-form-->
 
-        <div class="subscribe-wraper">
+       <!--  <div class="subscribe-wraper">
           <p class="name-form-subscribe">Subscribe</p>
           <form class="subscribe-form" name="subscribe">
             <label class="text-field-subscribe">
@@ -604,13 +689,12 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
     </footer>
 
     <!--Modal window-->
-    
-    
-    <div class="backdrop is-hidden" data-modal>
+
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -702,7 +786,7 @@
           <button class="btn btn-modal-send" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div>  -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
