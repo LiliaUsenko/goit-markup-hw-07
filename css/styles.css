@@ -653,7 +653,7 @@ img {
 }
 /**
   |============================
-  | What are we doing
+  | Works section (What are we doing)
   |============================
 */
 
@@ -672,7 +672,13 @@ img {
   }
 }
 
-/*Fourth section*/
+/**
+  |============================
+  | Team section
+  |============================
+*/
+
+
 /* 
 
  .header {
@@ -756,6 +762,11 @@ img {
   fill: var(--color-cloud);
 }
  */
+
+
+
+
+ 
 /*Fifth section-Customers*/
 
 /* .customers {
