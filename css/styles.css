@@ -79,6 +79,7 @@ img {
 .container {
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 96px;
 }
 
 @media screen and (min-width: 428px) {
@@ -86,7 +87,7 @@ img {
     width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 96px;
+    
   }
 }
 
@@ -561,6 +562,7 @@ img {
   |============================
 */
 
+
 .tools-icon {
   display: none;
 }
@@ -678,6 +680,77 @@ img {
   |============================
 */
 
+/**
+  |============================
+  | Customers section
+  |============================
+*/
+
+.customers-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
+
+}
+
+.customers-item {
+  box-sizing: border-box;
+  width: 190px;
+  height: 88px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-light-slate);
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover {
+  color: var(--color-ocean);
+  border-color: var(--color-ocean);
+}
+
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+    justify-content: center;
+  }
+
+  .customers-item {
+    width: 168px;
+    height: 88px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (min-width: 1158px) {
+  .customers-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
 
 /* 
 
@@ -767,47 +840,7 @@ img {
 
 
  
-/*Fifth section-Customers*/
 
-/* .customers {
-  padding: 120px 0;
-}
-
-.customers-conteiner {
-  display: flex;
-  gap: 24px;
-}
-
-.customers-item {
-  box-sizing: border-box;
-  width: 168px;
-  height: 88px;
-}
-
-.customers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: var(--color-light-slate);
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  transition-property: color, border-color;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
-}
-
-.customers-icon {
-  fill: currentColor;
-}
-
-.customers-link:hover,
-.customers-link:focus {
-  color: var(--color-ocean);
-  border-color: var(--color-ocean);
-}
- */
 /*Footer*/
 /* 
 .footer {
