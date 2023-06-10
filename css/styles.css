@@ -856,6 +856,12 @@ img {
   background-color: var(--color-navy-blue);
 }
 
+.description-and-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
 .footer-wrapper {
   display: flex;
   flex-direction: column;
@@ -988,6 +994,12 @@ img {
     row-gap: 72px;
     column-gap: 24px;
   }
+  
+  .description-and-socials {
+  display: flex;
+  flex-direction:row;
+  gap: 24px;
+  }
 
   .footer-container{
     align-items: flex-start;
@@ -1018,8 +1030,13 @@ img {
   }
    
   .footer-wrapper {
-    gap: 80px;
+    justify-content: space-between;
   }
+
+  .description-and-socials {
+    display: flex;
+    flex-direction:row;
+    gap: 120px;
 }
 
 
