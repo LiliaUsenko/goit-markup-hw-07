@@ -331,6 +331,7 @@ img {
 .header{
   border-bottom: 1px solid var(--color-cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  z-index: 1;
 }
 
 .header-conteiner {
@@ -521,8 +522,6 @@ img {
    }
 }
 
-
-
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
@@ -570,7 +569,6 @@ img {
   | Tools section
   |============================
 */
-
 
 .tools-icon {
   display: none;
@@ -662,6 +660,7 @@ img {
     border-radius: 4px;
   }
 }
+
 /**
   |============================
   | Works section (What are we doing)
@@ -769,7 +768,6 @@ img {
   fill: var(--color-cloud);
 }
 
-
 @media screen and (min-width: 768px) {
   .team-list {
     row-gap: 64px;
@@ -790,7 +788,6 @@ img {
     justify-content: center;
   }
 }
-
  
 /**
   |============================
@@ -837,7 +834,6 @@ img {
   color: var(--color-ocean);
   border-color: var(--color-ocean);
 }
-
 
 @media screen and (min-width: 768px) {
   .customers-list {
@@ -946,8 +942,7 @@ img {
   width: 100%;
 }
 
- 
-.text-field-subscribe {
+ .text-field-subscribe {
   position: relative;
   margin-right: 24px; 
   width: 100%;
@@ -973,7 +968,7 @@ img {
   align-items: center;
   color: var(--color-white);
   opacity: 0.6;
-  }
+}
   
 .subscribe-button {
   display: flex;
@@ -1057,10 +1052,14 @@ img {
     display: flex;
     flex-direction:row;
     gap: 120px;
+  }
 }
-
-/*Portfolio page*/
-/* 
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+ 
 .gallary {
   padding: 96px 0 120px;
 }
@@ -1183,9 +1182,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
- 
-/*Modal Styles*/
-/*
+
 
 .header {
   left: 0;
@@ -1198,8 +1195,6 @@ img {
   | Modal window
   |============================
 */
-
-/*
 
 .backdrop {
   position: fixed;
@@ -1223,13 +1218,13 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  min-height: 584px;
   padding: 72px 24px 24px 24px;
   background-color: var(--color-dairy);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
+
   transition-property: opacity;
   transition-duration: 500ms;
   transition-timing-function: ease;
@@ -1250,10 +1245,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer; 
+  
   transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
- }
+}
 
 .modal-button:hover,
 .modal-button:focus {
@@ -1264,11 +1260,9 @@ img {
   fill: currentColor;
 }
 
-
 .modal-button:hover > .modal-icon {
   fill: var(--color-white);
 }
-
 
 .name-modal-form {
   display: block;
@@ -1388,4 +1382,3 @@ img {
   fill: #FFFFFF;
   border-color:#404bbf;
 }  
-*/
