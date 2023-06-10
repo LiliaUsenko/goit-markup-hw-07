@@ -307,7 +307,7 @@ img {
 @media screen and (max-width: 427px) {
     .mobile-menu-phone {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--color-iris);
