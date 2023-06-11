@@ -83,16 +83,6 @@ img {
   padding-bottom: 96px;
 }
 
-@media screen and (max-width: 428px) {
-  .container {
-   
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-}
-
-
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
@@ -220,11 +210,11 @@ img {
   |============================
 */
 
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  } 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+} 
 
 .mobile-menu.is-hidden {
   visibility: hidden;
@@ -323,7 +313,7 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 428px) {
     .mobile-menu-phone {
     font-weight: 700;
     font-size: 22px;
